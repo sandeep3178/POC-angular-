@@ -1,0 +1,10 @@
+#id1{
+    display: inline;
+}
+table, th, td {
+    align-self:center;
+    border: .5px solid black;
+    position: relative;
+    padding:10px; 
+    font-size: 15px;
+  }
