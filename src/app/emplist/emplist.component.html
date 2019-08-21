@@ -1,1 +1,42 @@
 <app-header></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="search-hero">
+            <input type="text" [(ngModel)]="userFilter.name" autocomplete="off"
+                placeholder="&#61442;  Start searching ">
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+
+    <tr>
+        <th>S.NO </th>
+        <th>name</th>
+        <th>department</th>
+        <th> Update</th>
+        <th> Delete</th>
+
+    </tr>
+
+    <tbody>
+        <tr *ngFor="let employe of employees | filterBy: userFilter">
+
+
+            <td>{{employe.id}}
+            </td>
+            <td>{{employe.name}}
+            </td>
+            <td>{{employe.department}}</td>
+            <td><button class="btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
+
+            <td><button class="btn btn-primary" (click)="deleteEmp(employe.id)">Delete</button></td>
+
+        </tr>
+    </tbody>
+
+</table>
+<button style="align-content: center;align-self:center;"><a routerLink="/addemp"> Add
+        Employee</a> </button>
+<app-footer></app-footer>

@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routerComponent } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthGuard } from './auth.guard';
 import { AuthService } from './auth.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -13,11 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { UnauthComponent } from './unauth/unauth.component';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarModule } from 'ng-sidebar';
-import { SideComponent } from './side/side.component';
-import { EmplistComponent } from './emplist/emplist.component';
-import { AddempComponent } from './addemp/addemp.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { LoginadminComponent } from './loginadmin/loginadmin.component';
+import { FilterPipeModule } from 'ngx-filter-pipe';
+
 
 @NgModule({
   declarations: [
@@ -27,11 +24,7 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     FooterComponent,
     UnauthComponent,
     // DashboardComponent,
-    SideComponent,
-    EmplistComponent,
-    AddempComponent,
-    DashboardComponent,
-    LoginadminComponent
+
 
   ],
   imports: [
@@ -39,7 +32,9 @@ import { LoginadminComponent } from './loginadmin/loginadmin.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    SidebarModule
+    SidebarModule,
+    FilterPipeModule,
+    FormsModule
   ],
   providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]

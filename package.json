@@ -21,6 +21,7 @@
     "@angular/router": "~8.1.2",
     "bootstrap": "^3.4.1",
     "ng-sidebar": "^9.0.0",
+    "ngx-filter-pipe": "^2.1.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
