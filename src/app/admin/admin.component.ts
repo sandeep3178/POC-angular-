@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { MustMatch } from './MustMatch';
+import { UserService } from '../user.service';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -11,9 +12,10 @@ export class AdminComponent implements OnInit {
   Submitted = false;
   userList: any = [];
   addUser: FormGroup;
-  formval: any
+  formval: any;
+  pagename: string = "Admin";
 
-  constructor(private http: HttpClient, private formbuilder: FormBuilder) {
+  constructor(private http: HttpClient, private formbuilder: FormBuilder, private userservice: UserService) {
     this.addUser = formbuilder.group({
       firstName: ['', [Validators.required, Validators.minLength(6)]],
       lastName: ['', Validators.required],
@@ -40,10 +42,14 @@ export class AdminComponent implements OnInit {
 
     })
   }
-
+  newfunc3() {
+    this.userservice.setPage(this.pagename);
+  }
 
   ngOnInit() {
     this.fetchData();
+    this.newfunc3();
+
   }
   onSubmit() {
     if (this.addUser.valid) {

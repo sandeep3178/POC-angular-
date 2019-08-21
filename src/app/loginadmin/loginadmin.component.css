@@ -70,12 +70,6 @@
   color: #fff;
   cursor: pointer;
 }
-.login button {
-  background:silver;
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
 
 
 .login input[type="submit"]:hover {

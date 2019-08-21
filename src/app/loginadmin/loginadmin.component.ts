@@ -1,23 +1,22 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, Validators, FormBuilder } from '@angular/forms'
-import { Router } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 import { UserService } from '../user.service';
-
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-loginadmin',
+  templateUrl: './loginadmin.component.html',
+  styleUrls: ['./loginadmin.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginadminComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted = false;
   formval: any = [];
   logindetails: any = [];
   currentUser: any;
 
-  constructor(private formbuilder: FormBuilder, private router: Router, public authService: AuthService, private http: HttpClient, private userservice: UserService) {
+  constructor(private formbuilder: FormBuilder, private http: HttpClient, public authService: AuthService, private router: Router, public userservice: UserService) {
     this.loginForm = this.formbuilder.group({
       email: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
       password: ['', [Validators.required, Validators.minLength(8), /* Validators.pattern('(?=.*[A-Z])') */]]
@@ -27,7 +26,7 @@ export class LoginComponent implements OnInit {
     return this.loginForm.controls;
   }
   fetchData() {
-    this.http.get("http://localhost:3000/formdata").subscribe(data => {
+    this.http.get("http://localhost:3000/admin").subscribe(data => {
       this.formval = data;
       console.log(this.formval);
 
@@ -40,20 +39,20 @@ export class LoginComponent implements OnInit {
     for (let i = 0; i < this.formval.length; i++) {
       if ((this.logindetails.email === this.formval[i].email) && (this.logindetails.password === this.formval[i].password)) {
 
-        this.currentUser = this.formval[i].firstName;
+        this.currentUser = this.formval[i].name;
         console.log(this.currentUser);
         this.userservice.globalUser(this.currentUser);
         this.authService.loggin();
-        this.router.navigateByUrl('dashboard');
+        this.router.navigateByUrl('admin');
 
         break;
       }
     }
 
   }
-  ngOnInit() {
-    this.fetchData();
 
+  ngOnInit() {
+    this.fetchData()
   }
   onSubmit() {
     if ((this.loginForm.controls.password.valid) && (this.loginForm.controls.email.valid)) {

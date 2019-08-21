@@ -16,6 +16,8 @@ import { SidebarModule } from 'ng-sidebar';
 import { SideComponent } from './side/side.component';
 import { EmplistComponent } from './emplist/emplist.component';
 import { AddempComponent } from './addemp/addemp.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginadminComponent } from './loginadmin/loginadmin.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { AddempComponent } from './addemp/addemp.component';
     // DashboardComponent,
     SideComponent,
     EmplistComponent,
-    AddempComponent
+    AddempComponent,
+    DashboardComponent,
+    LoginadminComponent
 
   ],
   imports: [

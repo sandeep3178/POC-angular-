@@ -95,6 +95,14 @@
       "password": "sandeep1",
       "confirmPassword": "sandeep1",
       "id": 12
+    },
+    {
+      "firstName": "apoorva",
+      "lastName": "singh",
+      "email": "apoorva@gmail.com",
+      "password": "apoorva123",
+      "confirmPassword": "apoorva123",
+      "id": 13
     }
   ],
   "employee": [
@@ -147,6 +155,18 @@
       "name": "tushar",
       "department": "testing",
       "id": 10
+    }
+  ],
+  "admin": [
+    {
+      "name": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "adminpass"
+    },
+    {
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": "adminpass"
     }
   ]
 }
