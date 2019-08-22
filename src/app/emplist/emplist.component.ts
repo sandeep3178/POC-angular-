@@ -10,10 +10,15 @@ import { FilterPipeModule, FilterPipe } from 'ngx-filter-pipe';
 export class EmplistComponent implements OnInit {
   pagename1: string = "Employee-list";
   employees: any = [];
+  // fetch: any = [];
+  // id: any;
+  // data: any = {}
   userFilter: any = { name: '' };
   constructor(private userservice: UserService, private http: HttpClient, private filterpipe: FilterPipe) {
     console.log(filterpipe.transform(this.employees, { name: '' }));
   }
+
+
 
   ngOnInit() {
     this.newfunc4();

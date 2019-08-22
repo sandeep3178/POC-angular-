@@ -5,9 +5,16 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
+
   getuser: any;
   setpage: any;
   constructor() { }
+  public user() {
+    localStorage.setItem('getuser', this.getuser)
+  }
+  public getusr() {
+    return localStorage.getItem('getuser');
+  }
   globalUser(userdata) {
     this.getuser = userdata;
     console.log(this.getuser);

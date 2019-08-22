@@ -20,11 +20,15 @@ export class HeaderComponent implements OnInit {
   }
   logout() {
     this.authservice.logOut();
+    localStorage.removeItem('getuser')
     this.router.navigateByUrl('login')
   }
   newfunc() {
-    this.currentUser = this.userservice.getuser;
-    return this.currentUser;
+
+    this.currentUser = JSON.stringify(localStorage.getItem('getuser'));
+    console.log(this.currentUser);
+    // this.currentUser = this.userservice.getuser;
+    // return this.currentUser;
   }
   newFunc1() {
     this.title = this.userservice.setpage;

@@ -1,30 +1,37 @@
 <app-header></app-header>
-<table class="table table-striped">
+<div class="col-sm-4">
+    <app-side></app-side>
+</div>
+<div class="col-sm-8">
+    <h2 style="margin-left: 5%">Employees Table</h2>
+    <br />
+    <table class="table table-striped">
 
-    <tr>
-        <th>S.NO </th>
-        <th>name</th>
-        <th>department</th>
+        <tr>
+            <th>S.NO </th>
+            <th>name</th>
+            <th>department</th>
 
 
-    </tr>
+        </tr>
 
-    <tbody>
-        <tr *ngFor="let employe of employees | slice:0:5">
+        <tbody>
+            <tr *ngFor="let employe of employees | slice:0:5">
 
 
-            <td>{{employe.id}}
-            </td>
-            <td>{{employe.name}}
-            </td>
-            <td>{{employe.department}}</td>
-            <!-- <td><button class=" btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
+                <td>{{employe.id}}
+                </td>
+                <td>{{employe.name}}
+                </td>
+                <td>{{employe.department}}</td>
+                <!-- <td><button class=" btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
 
             <td><button class="btn btn-primary" (click)="deleteEmp(employe.id)">Delete</button></td> -->
 
-        </tr>
-    </tbody>
+            </tr>
+        </tbody>
 
-</table>
-<h1><a routerLink="/emplist">View More</a></h1>
+    </table>
+</div>
+<h1 style="margin-left: 40%"><a routerLink="/emplist">View More</a></h1>
 <app-footer></app-footer>

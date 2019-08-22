@@ -1,0 +1,30 @@
+<app-header></app-header>
+<h1 style="margin-left: 40%">Update Employee</h1>
+<form style="margin-left: 40%" id="Employee" name="Employee" #employeeData="ngForm"
+    (ngSubmit)="updateEmployee(employeeData.value)">
+    <label>
+        Name:
+    </label>
+    <input type="text" name="name" id="name" placeholder="name" [(ngModel)]="data.name" /><br />
+    <label>
+        Department:
+    </label>
+    <input type="text" name="department" id="department" placeholder="department" [(ngModel)]="data.department" />
+    <br />
+
+
+
+    <label>
+        phone:
+    </label>
+    <input type="text" name="phone" id="phone" placeholder="phone" [(ngModel)]="data.phone" /><br />
+    <label>
+        location:
+    </label>
+    <input type="text" name="location" id="location" placeholder="location" [(ngModel)]="data.location" />
+    <br />
+
+
+    <button style="margin-left: 12%" class="btn-primary" type="submit" value="Update">Update</button>
+</form>
+<app-footer></app-footer>

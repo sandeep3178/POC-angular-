@@ -103,18 +103,31 @@
       "password": "apoorva123",
       "confirmPassword": "apoorva123",
       "id": 13
+    },
+    {
+      "firstName": "sagarrrr",
+      "lastName": "shrivas",
+      "email": "sagar@gmail.com",
+      "password": "sagar123",
+      "confirmPassword": "sagar123",
+      "id": 14
+    },
+    {
+      "firstName": "nilesh",
+      "lastName": "raheja",
+      "email": "nilesh@gmail.com",
+      "password": "nilesh123",
+      "confirmPassword": "nilesh123",
+      "id": 15
     }
   ],
   "employee": [
     {
       "name": "Sandeep sarswat",
       "department": "operation",
+      "phone": "1234567890",
+      "location": "seol",
       "id": 1
-    },
-    {
-      "name": "pankaj tirkey",
-      "department": "operation",
-      "id": 2
     },
     {
       "name": "Apurva",
@@ -152,9 +165,28 @@
       "id": 9
     },
     {
-      "name": "tushar",
-      "department": "testing",
-      "id": 10
+      "name": "praveen",
+      "department": "admin",
+      "id": 11
+    },
+    {
+      "name": "charu",
+      "department": "sales",
+      "phone": "9582901521",
+      "location": "gurgaon",
+      "id": 12
+    },
+    {
+      "name": "gaurav",
+      "department": "inventory",
+      "id": 13
+    },
+    {
+      "name": "sohit",
+      "department": "AMD",
+      "phone": "9798969548",
+      "location": "delhi",
+      "id": 14
     }
   ],
   "admin": [

@@ -1,6 +1,7 @@
 table, th, td {
-    border: 1px solid black;
-    position:relative;
-  }
- 
-  
+  align-self:center;
+  border: .5px solid black;
+  position: relative;
+  padding:2px; 
+  font-size: 20px;
+}

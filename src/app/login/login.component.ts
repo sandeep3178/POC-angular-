@@ -44,6 +44,7 @@ export class LoginComponent implements OnInit {
         console.log(this.currentUser);
         this.userservice.globalUser(this.currentUser);
         this.authService.loggin();
+        this.userservice.user();
         this.router.navigateByUrl('dashboard');
 
         break;

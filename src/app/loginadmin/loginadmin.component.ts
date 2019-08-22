@@ -43,6 +43,7 @@ export class LoginadminComponent implements OnInit {
         console.log(this.currentUser);
         this.userservice.globalUser(this.currentUser);
         this.authService.loggin();
+        this.userservice.user();
         this.router.navigateByUrl('admin');
 
         break;

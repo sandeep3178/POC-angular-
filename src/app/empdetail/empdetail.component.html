@@ -1,0 +1,39 @@
+<app-header></app-header>
+<table class="table table-striped">
+
+    <tr>
+        <th>S.NO </th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Phone</th>
+        <th>Location</th>
+        <!-- <th> Update</th>
+        <th> Delete</th> -->
+
+    </tr>
+
+    <tbody>
+        <tr>
+
+
+            <td>{{employees1.id}}
+            </td>
+            <td>
+                {{employees1.name}} </td>
+            <td>{{employees1.department}}
+            </td>
+            <td>{{employees1.phone}}
+            </td>
+            <td>{{employees1.location}}
+            </td>
+            <!-- <td><button class="btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
+
+            <td><button class="btn btn-primary" (click)="deleteEmp(employe.id)">Delete</button></td> -->
+
+        </tr>
+    </tbody>
+
+</table>
+<button class="btn btn-primary" routerLink="/emplist/empdetail/{{employees1.id}}/edit">Update</button>
+<button class="btn btn-primary" (click)="deleteEmp(employees1.id)">Delete</button>
+<app-footer></app-footer>

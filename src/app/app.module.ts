@@ -14,6 +14,8 @@ import { UnauthComponent } from './unauth/unauth.component';
 // import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarModule } from 'ng-sidebar';
 import { FilterPipeModule } from 'ngx-filter-pipe';
+import { EmpdetailComponent } from './empdetail/empdetail.component';
+import { EditComponent } from './edit/edit.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
     HeaderComponent,
     FooterComponent,
     UnauthComponent,
+    EmpdetailComponent,
+    EditComponent,
     // DashboardComponent,
 
 

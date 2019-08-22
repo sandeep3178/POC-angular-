@@ -9,6 +9,8 @@ import { AddempComponent } from './addemp/addemp.component';
 import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SideComponent } from './side/side.component';
+import { EmpdetailComponent } from './empdetail/empdetail.component';
+import { EditComponent } from './edit/edit.component';
 
 
 
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: "loginadmin", component: LoginadminComponent },
   { path: "dashboard", component: DashboardComponent, canActivate: [AuthGuard] },
   { path: "side", component: SideComponent },
+  { path: "emplist/empdetail/:id", component: EmpdetailComponent },
+  { path: "emplist/empdetail/:id/edit", component: EditComponent },
   { path: "**", redirectTo: 'login' }
 
 ];
@@ -31,4 +35,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routerComponent = [LoginComponent, AdminComponent, UnauthComponent, EmplistComponent, AddempComponent, LoginadminComponent, DashboardComponent, SideComponent]
+export const routerComponent = [LoginComponent, AdminComponent, UnauthComponent, EmplistComponent, AddempComponent, EditComponent, LoginadminComponent, EmpdetailComponent, DashboardComponent, SideComponent]
