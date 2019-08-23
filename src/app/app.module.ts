@@ -16,6 +16,7 @@ import { SidebarModule } from 'ng-sidebar';
 import { FilterPipeModule } from 'ngx-filter-pipe';
 import { EmpdetailComponent } from './empdetail/empdetail.component';
 import { EditComponent } from './edit/edit.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { EditComponent } from './edit/edit.component';
     HttpClientModule,
     SidebarModule,
     FilterPipeModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]

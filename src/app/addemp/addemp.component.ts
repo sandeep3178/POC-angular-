@@ -23,6 +23,9 @@ export class AddempComponent implements OnInit {
 
     })
   }
+  get formControls() {
+    return this.addemployee.controls;
+  }
   newfunc5() {
     this.userservice.setPage(this.pagename);
   }

@@ -105,20 +105,36 @@
       "id": 13
     },
     {
-      "firstName": "sagarrrr",
-      "lastName": "shrivas",
-      "email": "sagar@gmail.com",
-      "password": "sagar123",
-      "confirmPassword": "sagar123",
-      "id": 14
+      "firstName": "yadav",
+      "lastName": "pankaj",
+      "email": "pankaj@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": 17
     },
     {
-      "firstName": "nilesh",
-      "lastName": "raheja",
-      "email": "nilesh@gmail.com",
-      "password": "nilesh123",
-      "confirmPassword": "nilesh123",
-      "id": 15
+      "firstName": "roman",
+      "lastName": "range",
+      "email": "roman@gmail.com",
+      "password": "romanrange",
+      "confirmPassword": "romanrange",
+      "id": 18
+    },
+    {
+      "firstName": "jack",
+      "lastName": "sparrow",
+      "email": "jack@gmail.com",
+      "password": "jacksparrow",
+      "confirmPassword": "jacksparrow",
+      "id": 19
+    },
+    {
+      "firstName": "vikrant",
+      "lastName": "singh",
+      "email": "vikrant@gmail.com",
+      "password": "9899227714",
+      "confirmPassword": "9899227714",
+      "id": 20
     }
   ],
   "employee": [
@@ -132,6 +148,8 @@
     {
       "name": "Apurva",
       "department": "operations",
+      "phone": "97171929657",
+      "location": "haridwar",
       "id": 3
     },
     {
@@ -145,8 +163,10 @@
       "id": 5
     },
     {
-      "name": "rishabh yadav",
-      "department": "sales",
+      "name": "Rishabh Yadav",
+      "department": "inventory",
+      "phone": "9719296183",
+      "location": "Bihar",
       "id": 6
     },
     {
@@ -157,6 +177,8 @@
     {
       "name": "jalaj tomar",
       "department": "sales",
+      "phone": "9798969548",
+      "location": "las vegas",
       "id": 8
     },
     {
@@ -180,13 +202,6 @@
       "name": "gaurav",
       "department": "inventory",
       "id": 13
-    },
-    {
-      "name": "sohit",
-      "department": "AMD",
-      "phone": "9798969548",
-      "location": "delhi",
-      "id": 14
     }
   ],
   "admin": [

@@ -17,7 +17,7 @@ export class AdminComponent implements OnInit {
 
   constructor(private http: HttpClient, private formbuilder: FormBuilder, private userservice: UserService) {
     this.addUser = formbuilder.group({
-      firstName: ['', [Validators.required, Validators.minLength(6)]],
+      firstName: ['', [Validators.required, Validators.required]],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
@@ -26,7 +26,9 @@ export class AdminComponent implements OnInit {
         validator: MustMatch('password', 'confirmPassword')
       });
   }
-  get f() { return this.addUser.controls; }
+  get f() {
+    return this.addUser.controls;
+  }
   adduser(userdata) {
     this.formval = userdata;
     this.http.post("http://localhost:3000/formdata", this.formval).subscribe(data => {

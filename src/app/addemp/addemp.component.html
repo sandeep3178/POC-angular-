@@ -6,39 +6,50 @@
 
                 <form [formGroup]="addemployee" (ngSubmit)="onAdd()">
                     <div class="form-group">
-                        <label>Name:</label>
-                        <input type="text" id="name" formControlName="name" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
-                        <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
-                            <div *ngIf="f.name.errors.required">First Name is required</div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Department:</label>
-                        <input type="text" id="department" formControlName="department" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.department.errors }" />
-                        <div *ngIf="submitted && f.department.errors" class="invalid-feedback">
-                            <div *ngIf="f.department.errors.required">Department is required</div>
+                        <p [ngClass]="{ 'has-error': isSubmitted && formControls.name.errors }">
+                            <input type="name" placeholder="Name" required formControlName="name">
+                        </p>
+
+                        <div *ngIf="isSubmitted && formControls.name.errors" class="help-block">
+                            <div *ngIf="formControls.name.errors.required">name is required</div>
                         </div>
                     </div>
 
 
+
+
+
+
                     <div class="form-group">
-                        <label>Phone:</label>
-                        <input type="text" id="phone" formControlName="phone" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" />
-                        <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
-                            <div *ngIf="f.phone.errors.required">phone is required</div>
+                        <p [ngClass]="{ 'has-error': isSubmitted && formControls.department.errors }">
+                            <input type="department" placeholder="Department" required department
+                                formControlName="department">
+                        </p>
+
+                        <div *ngIf="isSubmitted && formControls.department.errors" class="help-block">
+                            <div *ngIf="formControls.department.errors.required">department is required</div>
                         </div>
                     </div>
 
 
                     <div class="form-group">
-                        <label>Location:</label>
-                        <input type="text" id="location" formControlName="location" class="form-control"
-                            [ngClass]="{ 'is-invalid': submitted && f.location.errors }" />
-                        <div *ngIf="submitted && f.location.errors" class="invalid-feedback">
-                            <div *ngIf="f.location.errors.required">location is required</div>
+                        <p [ngClass]="{ 'has-error': isSubmitted && formControls.phone.errors }">
+                            <input type="phone" placeholder="Phone" required phone formControlName="phone">
+                        </p>
+
+                        <div *ngIf="isSubmitted && formControls.phone.errors" class="help-block">
+                            <div *ngIf="formControls.phone.errors.required">phone is required</div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <p [ngClass]="{ 'has-error': isSubmitted && formControls.location.errors }">
+                            <input type="location" placeholder="Location" required location formControlName="location">
+                        </p>
+
+                        <div *ngIf="isSubmitted && formControls.location.errors" class="help-block">
+                            <div *ngIf="formControls.location.errors.required">location is required</div>
                         </div>
                     </div>
 
