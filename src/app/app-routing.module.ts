@@ -35,4 +35,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+//created a routercomponent array containing all components so everytime we dont have to import new component in app.module.ts 
 export const routerComponent = [LoginComponent, AdminComponent, UnauthComponent, EmplistComponent, AddempComponent, EditComponent, LoginadminComponent, EmpdetailComponent, DashboardComponent, SideComponent]

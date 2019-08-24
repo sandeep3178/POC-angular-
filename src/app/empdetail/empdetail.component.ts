@@ -25,29 +25,22 @@ export class EmpdetailComponent implements OnInit {
   ) { }
 
   updateEmployee(employee1) {
-    this.employeeobj = {
+    this.employeeobj = {        //payload to update selected employee
       name: employee1.name,
       department: employee1.department
     };
 
-    // const url = `${"http://localhost:3000/employee"}/${this.id}`;
-    // this.http
-    //   .put(url, JSON.stringify(this.employeeobj), { headers: this.headers })
-    //   .toPromise()
-    //   .then(() => {
-    //     alert("Details updated");
-    //     this.router.navigate(["/admin"]);
-    //   });
+
   }
   newfunc6() {
-    this.userservice.setPage(this.pagename);
+    this.userservice.setPage(this.pagename);  //userservice to display name of current page on header
   }
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.id = +params["id"];
       this.newfunc6();
     });
-    this.http.get("http://localhost:3000/employee/" + this.id).subscribe(
+    this.http.get("http://localhost:3000/employee/" + this.id).subscribe(    //function to get details in prepopulated fields
       data => {
         console.log(data);
         this.employees1 = data;
@@ -60,7 +53,7 @@ export class EmpdetailComponent implements OnInit {
       }
     );
   }
-  deleteEmp(id: number) {
+  deleteEmp(id: number) {     //function to delete the details of a particular employee
     const url = `${this.api}/${id}`;
     if (confirm("are you sure")) {
       this.http.delete(url).subscribe(

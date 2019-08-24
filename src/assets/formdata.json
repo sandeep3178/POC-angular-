@@ -79,6 +79,14 @@
       "password": "rishabhyadav",
       "confirmPassword": "rishabhyadav",
       "id": 22
+    },
+    {
+      "firstName": "rahul ",
+      "lastName": "sharma",
+      "email": "rahul@gmail.com",
+      "password": "rahulsharma",
+      "confirmPassword": "rahulsharma",
+      "id": 23
     }
   ],
   "employee": [
@@ -155,11 +163,11 @@
       "id": 11
     },
     {
-      "name": "jatin",
-      "department": "sales",
-      "phone": "9856985698",
-      "location": "new york",
-      "today": 1566630353612,
+      "name": "praveen",
+      "department": "marketing",
+      "phone": "95969894575",
+      "location": "queenstown",
+      "today": 1566634880455,
       "id": 12
     }
   ],

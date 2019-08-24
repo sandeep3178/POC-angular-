@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../auth.service'; //auth service for authentication of user and admin
 import { Router } from '@angular/router';
-import { UserService } from '../user.service';
+import { UserService } from '../user.service'; //userservice for displaying current page and current user on header
 @Component({
   selector: 'app-loginadmin',
   templateUrl: './loginadmin.component.html',
@@ -18,7 +18,7 @@ export class LoginadminComponent implements OnInit {
 
   constructor(private formbuilder: FormBuilder, private http: HttpClient, public authService: AuthService, private router: Router, public userservice: UserService) {
     this.loginForm = this.formbuilder.group({
-      email: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],
+      email: ['', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')]],  //form fields
       password: ['', [Validators.required, Validators.minLength(8), /* Validators.pattern('(?=.*[A-Z])') */]]
     });
   }
@@ -26,13 +26,13 @@ export class LoginadminComponent implements OnInit {
     return this.loginForm.controls;
   }
   fetchData() {
-    this.http.get("http://localhost:3000/admin").subscribe(data => {
+    this.http.get("http://localhost:3000/admin").subscribe(data => {  //function to fetch data from json-server db
       this.formval = data;
       console.log(this.formval);
 
     })
   }
-  authUser(loginDetails) {
+  authUser(loginDetails) {  //function to authenticate user and admin 
     this.logindetails = loginDetails;
     console.log("reaching")
     console.log(this.logindetails);
@@ -56,7 +56,7 @@ export class LoginadminComponent implements OnInit {
     this.fetchData()
   }
   onSubmit() {
-    if ((this.loginForm.controls.password.valid) && (this.loginForm.controls.email.valid)) {
+    if ((this.loginForm.controls.password.valid) && (this.loginForm.controls.email.valid)) { //function containing details of the input provided by user and send it to above function for authentication
       this.isSubmitted = true;
       console.log(this.loginForm.value);
       this.authUser(this.loginForm.value);

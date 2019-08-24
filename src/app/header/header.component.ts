@@ -25,13 +25,13 @@ export class HeaderComponent implements OnInit {
   }
   newfunc() {
 
-    this.currentUser = JSON.stringify(localStorage.getItem('getuser'));
+    this.currentUser = JSON.stringify(localStorage.getItem('getuser')); //to get value from local stroage and send it to a variable to display name of user on header component
     console.log(this.currentUser);
     // this.currentUser = this.userservice.getuser;
     // return this.currentUser;
   }
   newFunc1() {
-    this.title = this.userservice.setpage;
+    this.title = this.userservice.setpage;   //function to display current page name
     return this.title;
 
   }
