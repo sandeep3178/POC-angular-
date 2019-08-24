@@ -1,6 +1,6 @@
 import { FormGroup } from '@angular/forms';
 
-export function MustMatch(controlName: string, matchingControlName: string) {
+export function MustMatch(controlName: string, matchingControlName: string) {  //custom validation on form fields to match password and current password
     return (formGroup: FormGroup) => {
         const control = formGroup.controls[controlName];
         const matchingControl = formGroup.controls[matchingControlName];

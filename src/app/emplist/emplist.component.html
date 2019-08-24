@@ -19,6 +19,7 @@
             <th>S.NO </th>
             <th>name</th>
             <th>department</th>
+            <th>Date</th>
             <!-- <th> Update</th>
         <th> Delete</th> -->
 
@@ -33,6 +34,8 @@
                 <td>
                     <a routerLink="empdetail/{{ employe.id }}"> {{employe.name}} </a> </td>
                 <td>{{employe.department}}
+                </td>
+                <td>{{employe.today}}
                 </td>
                 <!-- <td><button class="btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
 

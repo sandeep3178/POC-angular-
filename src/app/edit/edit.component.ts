@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
-import { UserService } from '../user.service';
+import { UserService } from '../user.service'; //userservice imported
 @Component({
   selector: 'app-edit',
   templateUrl: './edit.component.html',

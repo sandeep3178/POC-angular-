@@ -1,30 +1,6 @@
 {
   "formdata": [
     {
-      "firstName": "sandeep",
-      "lastName": "sarswat",
-      "email": "sandeep@gmail.com",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "id": 1
-    },
-    {
-      "firstName": "pankaj",
-      "lastName": "tikrey",
-      "email": "pankaj@vinove.com",
-      "password": "pankaj",
-      "confirmPassword": "pankaj",
-      "id": 2
-    },
-    {
-      "firstName": "randhir",
-      "lastName": "sha",
-      "email": "randhir@vinove.com",
-      "password": "randhir",
-      "confirmPassword": "randhir",
-      "id": 3
-    },
-    {
       "firstName": "jhon cena",
       "lastName": "cena",
       "email": "jhon.cena@wwe.com",
@@ -47,54 +23,6 @@
       "password": "rishabh",
       "confirmPassword": "rishabh",
       "id": 6
-    },
-    {
-      "firstName": "apurva",
-      "lastName": "singh",
-      "email": "apurva@gmail.com",
-      "password": "apurva",
-      "confirmPassword": "apurva",
-      "id": 7
-    },
-    {
-      "firstName": "rahul",
-      "lastName": "sharma",
-      "email": "sandeep@test.com",
-      "password": "sandeepsarswat",
-      "confirmPassword": "sandfoafna",
-      "id": 8
-    },
-    {
-      "firstName": "mukul",
-      "lastName": "hooda",
-      "email": "mukul@gmail.com",
-      "password": "sandeepsaba",
-      "confirmPassword": "salaf",
-      "id": 9
-    },
-    {
-      "firstName": "sonu",
-      "lastName": "kumar",
-      "email": "sandeep@test.com",
-      "password": "sonukumar",
-      "confirmPassword": "sonukamar",
-      "id": 10
-    },
-    {
-      "firstName": "pankaj",
-      "lastName": "tirkey",
-      "email": "pankaj@gmail.com",
-      "password": "pankaj1",
-      "confirmPassword": "pankaj1",
-      "id": 11
-    },
-    {
-      "firstName": "netapp",
-      "lastName": "india",
-      "email": "netapp@gmail.com",
-      "password": "sandeep1",
-      "confirmPassword": "sandeep1",
-      "id": 12
     },
     {
       "firstName": "apoorva",
@@ -135,73 +63,104 @@
       "password": "9899227714",
       "confirmPassword": "9899227714",
       "id": 20
+    },
+    {
+      "firstName": "sandeep",
+      "lastName": "sarswat",
+      "email": "sandeep@gmail.com",
+      "password": "sandeep1",
+      "confirmPassword": "sandeep1",
+      "id": 21
+    },
+    {
+      "firstName": "rishabh",
+      "lastName": "yadav",
+      "email": "rishabh@gmail.com",
+      "password": "rishabhyadav",
+      "confirmPassword": "rishabhyadav",
+      "id": 22
     }
   ],
   "employee": [
     {
-      "name": "Sandeep sarswat",
-      "department": "operation",
-      "phone": "1234567890",
-      "location": "seol",
+      "name": "Sandeep",
+      "department": "operations",
+      "phone": "9582901521",
+      "location": "gurgaon",
+      "today": 1566558421485,
       "id": 1
     },
     {
-      "name": "Apurva",
+      "name": "apoorva",
       "department": "operations",
-      "phone": "97171929657",
-      "location": "haridwar",
-      "id": 3
+      "phone": "9693929551",
+      "location": "delhi",
+      "today": 1566559004013,
+      "id": 2
     },
     {
-      "name": "Randhir sha",
-      "department": "operation",
+      "name": "randhir sha",
+      "department": "operations",
+      "phone": "6598985656",
+      "location": "gurgaon",
+      "today": 1566559083060,
       "id": 4
     },
     {
-      "name": "himanshu chaddha",
-      "department": "operation",
+      "name": "himanshu",
+      "department": "opr",
+      "phone": "9596895326",
+      "location": "sector 4",
+      "today": 1566559491047,
       "id": 5
     },
     {
-      "name": "Rishabh Yadav",
-      "department": "inventory",
-      "phone": "9719296183",
-      "location": "Bihar",
-      "id": 6
-    },
-    {
-      "name": "jatin pratap singh",
-      "department": "sales",
+      "name": "ram",
+      "department": "opr",
+      "phone": "95968958",
+      "location": "delhi",
+      "today": 1566559551826,
       "id": 7
     },
     {
-      "name": "jalaj tomar",
-      "department": "sales",
-      "phone": "9798969548",
-      "location": "las vegas",
+      "name": "shyam",
+      "department": "opr",
+      "phone": "95695895",
+      "location": "delhi",
+      "today": 1566559580383,
       "id": 8
     },
     {
-      "name": "ravi kumar",
-      "department": "finance",
+      "name": "pankaj",
+      "department": "trainee head",
+      "phone": "9899227714",
+      "location": "Las Vegas",
+      "today": 1566559883376,
       "id": 9
     },
     {
-      "name": "praveen",
-      "department": "admin",
+      "name": "akshay",
+      "department": "sales",
+      "phone": "9898895695",
+      "location": "delhi",
+      "today": 1566626775169,
+      "id": 10
+    },
+    {
+      "name": "jatin",
+      "department": "sales",
+      "phone": "9582901521",
+      "location": "delhi",
+      "today": 1566627344624,
       "id": 11
     },
     {
-      "name": "charu",
+      "name": "jatin",
       "department": "sales",
-      "phone": "9582901521",
-      "location": "gurgaon",
+      "phone": "9856985698",
+      "location": "new york",
+      "today": 1566630353612,
       "id": 12
-    },
-    {
-      "name": "gaurav",
-      "department": "inventory",
-      "id": 13
     }
   ],
   "admin": [

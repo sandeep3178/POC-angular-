@@ -3,7 +3,7 @@
     <app-side></app-side>
 </div>
 <div class="col-sm-8">
-    <h2 style="margin-left: 5%">Employees Table</h2>
+    <h2 style="margin-left: 0%">Recently Added employees</h2>
     <br />
     <table class="table table-striped">
 
@@ -11,6 +11,38 @@
             <th>S.NO </th>
             <th>name</th>
             <th>department</th>
+            <th>Date Of Creation </th>
+
+
+        </tr>
+
+        <tbody>
+            <tr *ngFor="let employe of employees | slice:-5">
+
+
+                <td>{{employe.id}}
+                </td>
+                <td>{{employe.name}}
+                </td>
+                <td>{{employe.department}}</td>
+                <td>{{employe.today}}</td>
+                <!-- <td><button class=" btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
+
+            <td><button class="btn btn-primary" (click)="deleteEmp(employe.id)">Delete</button></td> -->
+
+            </tr>
+        </tbody>
+
+    </table>
+    <br />
+    <h2 style="margin-left: 0%">Top 5 employees</h2>
+    <table class="table table-striped">
+
+        <tr>
+            <th>S.NO </th>
+            <th>name</th>
+            <th>department</th>
+            <th>Date Of Creation </th>
 
 
         </tr>
@@ -24,6 +56,7 @@
                 <td>{{employe.name}}
                 </td>
                 <td>{{employe.department}}</td>
+                <td>{{employe.today}}</td>
                 <!-- <td><button class=" btn btn-primary" routerLink="update/{{ employe.id }}">Update</button></td>
 
             <td><button class="btn btn-primary" (click)="deleteEmp(employe.id)">Delete</button></td> -->
