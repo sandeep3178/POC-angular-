@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
 
     })
   }
-  authUser(loginDetails) {    //function to check whether user is authenticated or not
+  authUser(loginDetails) {    //function to check whether user is authenticated or not ... it will match email id and password from backend and current field values entered by user
     this.logindetails = loginDetails;
     console.log("reaching")
     console.log(this.logindetails);

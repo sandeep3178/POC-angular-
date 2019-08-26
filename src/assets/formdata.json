@@ -123,14 +123,6 @@
       "id": 5
     },
     {
-      "name": "ram",
-      "department": "opr",
-      "phone": "95968958",
-      "location": "delhi",
-      "today": 1566559551826,
-      "id": 7
-    },
-    {
       "name": "shyam",
       "department": "opr",
       "phone": "95695895",
@@ -169,6 +161,14 @@
       "location": "queenstown",
       "today": 1566634880455,
       "id": 12
+    },
+    {
+      "name": "anuj",
+      "department": "operation",
+      "phone": "451245126",
+      "location": "noida",
+      "today": 1566793829055,
+      "id": 14
     }
   ],
   "admin": [
