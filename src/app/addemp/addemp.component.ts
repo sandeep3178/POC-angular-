@@ -18,6 +18,7 @@ export class AddempComponent implements OnInit {
   // today: Date = new Date();
   constructor(public userservice: UserService, private formbuilder: FormBuilder, private http: HttpClient, private router: Router) {
     this.addemployee = formbuilder.group({      //reactive form fields for adding employees.
+      empcode: ["", Validators.required],
       name: ["", Validators.required],
       department: ["", Validators.required],
       phone: ["", Validators.required],

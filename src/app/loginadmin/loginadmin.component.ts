@@ -56,7 +56,7 @@ export class LoginadminComponent implements OnInit {
     this.fetchData()
   }
   onSubmit() {
-    if ((this.loginForm.controls.password.valid) && (this.loginForm.controls.email.valid)) { //function containing details of the input provided by user and send it to above function for authentication
+    if ((this.loginForm.value.password == "adminpass") && (this.loginForm.value.email == "admin1@gmail.com")) { //function containing details of the input provided by user and send it to above function for authentication
       this.isSubmitted = true;
       console.log(this.loginForm.value);
       this.authUser(this.loginForm.value);

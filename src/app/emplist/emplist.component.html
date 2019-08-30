@@ -13,7 +13,7 @@
     <app-side></app-side>
 </div>
 <div class="col-sm-8">
-    <table style="width:35%" class="table table-striped">
+    <table style="width : 35%" class="table table-striped">
 
         <tr>
             <th>S.NO </th>
@@ -29,10 +29,10 @@
             <tr *ngFor="let employe of employees | filterBy: userFilter">
 
 
-                <td>{{employe.id}}
+                <td>{{employe._id}}
                 </td>
                 <td>
-                    <a routerLink="empdetail/{{ employe.id }}"> {{employe.name}} </a> </td>
+                    <a routerLink="empdetail/{{ employe._id }}"> {{employe.name}} </a> </td>
                 <td>{{employe.department}}
                 </td>
                 <td>{{employe.today}}
@@ -46,7 +46,8 @@
 
     </table>
 </div>
-<button style="position: absolute; margin-left: -57%; margin-top: 600px"><a routerLink="/addemp"> Add
+<button style="position: absolute; margin-left: -55%; margin-top: 710px"><a routerLink="/addemp">
+        Add
         Employee</a> </button>
 
 <app-footer></app-footer>

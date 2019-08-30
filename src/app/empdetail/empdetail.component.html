@@ -16,7 +16,7 @@
         <tr>
 
 
-            <td>{{employees1.id}}
+            <td>{{employees1._id}}
             </td>
             <td>
                 {{employees1.name}} </td>
@@ -34,6 +34,6 @@
     </tbody>
 
 </table>
-<button class="btn btn-primary" routerLink="/emplist/empdetail/{{employees1.id}}/edit">Update</button>
-<button class="btn btn-primary" (click)="deleteEmp(employees1.id)">Delete</button>
+<button class="btn btn-primary" routerLink="/emplist/empdetail/{{employees1._id}}/edit">Update</button>
+<button class="btn btn-primary" (click)="deleteEmp(employees1._id)">Delete</button>
 <app-footer></app-footer>

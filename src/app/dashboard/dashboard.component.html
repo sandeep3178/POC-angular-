@@ -8,7 +8,7 @@
     <table class="table table-striped">
 
         <tr>
-            <th>S.NO </th>
+            <th>E.CODE </th>
             <th>name</th>
             <th>department</th>
             <th>Date Of Creation </th>
@@ -20,7 +20,7 @@
             <tr *ngFor="let employe of employees | slice:-5">
 
 
-                <td>{{employe.id}}
+                <td>{{employe.empcode}}
                 </td>
                 <td>{{employe.name}}
                 </td>
@@ -39,7 +39,7 @@
     <table class="table table-striped">
 
         <tr>
-            <th>S.NO </th>
+            <th>E.CODE </th>
             <th>name</th>
             <th>department</th>
             <th>Date Of Creation </th>
@@ -51,7 +51,7 @@
             <tr *ngFor="let employe of employees | slice:0:5">
 
 
-                <td>{{employe.id}}
+                <td>{{employe.empcode}}
                 </td>
                 <td>{{employe.name}}
                 </td>

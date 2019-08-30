@@ -87,6 +87,14 @@
       "password": "rahulsharma",
       "confirmPassword": "rahulsharma",
       "id": 23
+    },
+    {
+      "firstName": "vineet",
+      "lastName": "kumar",
+      "email": "vineet@gmail.com",
+      "password": "vineetkumar",
+      "confirmPassword": "vineetkumar",
+      "id": 24
     }
   ],
   "employee": [
@@ -113,14 +121,6 @@
       "location": "gurgaon",
       "today": 1566559083060,
       "id": 4
-    },
-    {
-      "name": "himanshu",
-      "department": "opr",
-      "phone": "9596895326",
-      "location": "sector 4",
-      "today": 1566559491047,
-      "id": 5
     },
     {
       "name": "shyam",
@@ -163,12 +163,12 @@
       "id": 12
     },
     {
-      "name": "anuj",
-      "department": "operation",
-      "phone": "451245126",
-      "location": "noida",
-      "today": 1566793829055,
-      "id": 14
+      "name": "himanshu",
+      "department": "architecture",
+      "phone": "9659856895",
+      "location": "faridabad",
+      "today": 1566803795768,
+      "id": 13
     }
   ],
   "admin": [

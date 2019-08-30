@@ -3,13 +3,19 @@
 <form style="margin-left: 40%" id="Employee" name="Employee" #employeeData="ngForm"
     (ngSubmit)="updateEmployee(employeeData.value)">
     <label>
+        E.CODE:
+    </label>
+    <input type="text" name="empcode" id="empcode" placeholder="empcode" [(ngModel)]="Data.empcode" />
+    <br />
+    <label>
         Name:
     </label>
-    <input type="text" name="name" id="name" placeholder="name" [(ngModel)]="data.name" /><br />
+    <input type="text" name="name" id="name" placeholder="name" [(ngModel)]="Data.name" />
+    <br />
     <label>
         Department:
     </label>
-    <input type="text" name="department" id="department" placeholder="department" [(ngModel)]="data.department" />
+    <input type="text" name="department" id="department" placeholder="department" [(ngModel)]="Data.department" />
     <br />
 
 
@@ -17,11 +23,11 @@
     <label>
         phone:
     </label>
-    <input type="text" name="phone" id="phone" placeholder="phone" [(ngModel)]="data.phone" /><br />
+    <input type="text" name="phone" id="phone" placeholder="phone" [(ngModel)]="Data.phone" /><br />
     <label>
         location:
     </label>
-    <input type="text" name="location" id="location" placeholder="location" [(ngModel)]="data.location" />
+    <input type="text" name="location" id="location" placeholder="location" [(ngModel)]="Data.location" />
     <br />
 
 

@@ -37,7 +37,7 @@ export class EmpdetailComponent implements OnInit {
   }
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.id = +params["id"];
+      this.id = params["id"];
       this.newfunc6();
     });
     this.http.get("http://localhost:3000/employee/" + this.id).subscribe(    //function to get details in prepopulated fields

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { MustMatch } from './MustMatch';
 import { UserService } from '../user.service'; // userservice to be imported to display current page name on header
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -15,7 +16,7 @@ export class AdminComponent implements OnInit {
   formval: any;
   pagename: string = "Admin";
 
-  constructor(private http: HttpClient, private formbuilder: FormBuilder, private userservice: UserService) {
+  constructor(private http: HttpClient, private formbuilder: FormBuilder, private userservice: UserService, private router: Router) {
     this.addUser = formbuilder.group({     // add user form fields
       firstName: ['', [Validators.required, Validators.required]],
       lastName: ['', Validators.required],
@@ -33,6 +34,7 @@ export class AdminComponent implements OnInit {
     this.formval = userdata;
     this.http.post("http://localhost:3000/formdata", this.formval).subscribe(data => {
       alert("user Added");
+      window.location.reload();
     })
 
   }
