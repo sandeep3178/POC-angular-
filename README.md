@@ -4,9 +4,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+<<<<<<< HEAD
 Run `ng serve` for a dev server. Navigate via [localhost](`http://localhost:4200/`). The app will automatically reload if you change any of the source files.
 Run `npm run JSONDB` for json server.Navigate via [localhost](`http://localhost:3000/`). The app will show Database and watch for any change.
 Run `npm run dev` to Run mongodb via localhost:3000. the app will run using database 
+=======
+Run `ng serve` for a dev server. Navigate to [localhost](`http://localhost:4200/`). The app will automatically reload if you change any of the source files.
+Run `npm run JSONDB` for json server.Navigate to [localhost](`http://localhost:3000/`). The app will show Database and watch for any change.
+Run 'npm run dev' from MONGODB.  NAVIGATE TO [localhost](`http://localhost:3000/`). the app will show database
+>>>>>>> 0d30c80cbe0c729af4acbed3905ec94e116f12a3
 
 ## Code scaffolding
 
