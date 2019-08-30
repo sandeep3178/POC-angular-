@@ -4,8 +4,9 @@ var router = express.Router();
 var ObjectId = require('mongoose').Types.ObjectId;
 var { admin } = require('../models/admin');
 router.use(cors());
-//localhost:3000/employees/
-router.get('/', (req, res) => {
+//baseurl : localhost:3000
+//admin url : localhost:3000/admin/
+router.get('/', (req, res) => {        // get api for server
     admin.find((err, docs) => {
         if (!err) {
             res.send(docs);
@@ -16,7 +17,7 @@ router.get('/', (req, res) => {
     });
 
 })
-router.get('/:id', (req, res) => {
+router.get('/:id', (req, res) => {   //get api using id for server
     if (!ObjectId.isValid(req.params.id))
         return res.status(400).send('no record');
     admin.findById(req.params.id, (err, doc) => {
@@ -26,7 +27,7 @@ router.get('/:id', (req, res) => {
     });
 
 });
-router.post('/', (req, res) => {
+router.post('/', (req, res) => {  // post api for server
     var emp = new admin({
         name: req.body.name,
         email: req.body.email,
@@ -38,7 +39,7 @@ router.post('/', (req, res) => {
         }
     });
 });
-router.put('/:id', (req, res) => {
+router.put('/:id', (req, res) => {   //post api using id for server
     if (!ObjectId.isValid(req.params.id))
         return res.status(400).send('no record');
 
@@ -56,7 +57,7 @@ router.put('/:id', (req, res) => {
         }
     });
 });
-router.delete('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {  //delete api for server
     if (!ObjectId.isValid(req.params.id))
         return res.status(400).send('no record');
     admin.findByIdAndDelete(req.params.id, (err, doc) => {

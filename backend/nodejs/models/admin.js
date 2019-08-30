@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 var admin = mongoose.model('admin', {
     name: {
         type: String,
-        require: true
+        require: true    //admin model schema in mongoose
     },
     email: {
         type: String,

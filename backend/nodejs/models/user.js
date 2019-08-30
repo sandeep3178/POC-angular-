@@ -12,7 +12,7 @@ var formdata = mongoose.model('formdata', {
         type: String,
         require: true
     },
-    password: {
+    password: {       //user model schema in mongoose
         type: String,
         require: true
 

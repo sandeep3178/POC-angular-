@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const { mongoose } = require('./db')
-var userController = require('./controllers/userController')
+var userController = require('./controllers/userController')       //containing all defined modules and route and directs the database and server
 var employeeController = require('./controllers/employeeController')
 var adminController = require('./controllers/adminController');
 const port = 3000;

@@ -4,7 +4,7 @@ var employee = mongoose.model('employee', {
         type: String,
     },
     name: {
-        type: String,
+        type: String,     //employee model schema in mongoose
         require: true
     },
     department: {
